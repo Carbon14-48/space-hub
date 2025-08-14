@@ -429,6 +429,8 @@
   .dot-indicators > *:hover,
   .dot-indicators > *:focus {
     background-color: hsl(var(--clr-white) / 0.5);
+    scale: 1.2;
+    opacity: 0.7;
   }
 
   .dot-indicators > [aria-selected="true"] {
