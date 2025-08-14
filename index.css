@@ -650,15 +650,17 @@ body {
     max-width: 100%;
   }
 }
-.circle {
-  --x-px: calc(var(--x) * 1px);
-  --y-px: calc(var(--y) * 1px);
-  position: fixed;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
-  pointer-events: none;
-  transform: translate(calc(var(--x-px) - 50%), calc(var(--y-px) - 50%));
-  z-index: 9999;
+@media (min-width: 1024px) {
+  .circle {
+    --x-px: calc(var(--x) * 1px);
+    --y-px: calc(var(--y) * 1px);
+    position: fixed;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+    transform: translate(calc(var(--x-px) - 50%), calc(var(--y-px) - 50%));
+    z-index: 9999;
+  }
 }
